@@ -113,6 +113,22 @@
       text-decoration: none;
     }
     
+    [dir="rtl"] .whatsapp-float {
+      right: auto;
+      left: 30px;
+    }
+    
+    input[type="tel"] {
+      direction: ltr;
+      text-align: right;
+    }
+    
+    [dir="rtl"] input[type="tel"] {
+      direction: ltr;
+      text-align: right;
+      padding-right: 15px;
+    }
+    
     .whatsapp-float:hover {
       transform: scale(1.1) translateY(-3px);
       box-shadow: 0 15px 35px rgba(37, 211, 102, 0.6);
