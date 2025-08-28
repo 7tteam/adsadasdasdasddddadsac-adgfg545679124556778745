@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="html-root">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">دليل 3030 - اكتشف أفضل المطاعم والمحلات</title>
+
+  <!-- icofont-css-link -->
+  <link rel="stylesheet" href="css/icofont.min.css">
+  <!-- Owl-Carosal-Style-link -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- Bootstrap-Style-link -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Aos-Style-link -->
+  <link rel="stylesheet" href="css/aos.css">
+  <!-- Coustome-Style-link -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Responsive-Style-link -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .toast-container {
+      position: fixed;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 99999;
+    }
+    .toast {
+      min-width: 280px;
+      max-width: 320px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      color: white;
+      font-weight: 500;
+      font-size: 14px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      backdrop-filter: blur(8px);
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .toast.success {
+      background: rgba(34, 197, 94, 0.9);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+    }
+    .toast.error {
+      background: rgba(239, 68, 68, 0.9);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+    .toast.info {
+      background: rgba(59, 130, 246, 0.9);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+    .form-control {
+      color: #000 !important;
+    }
+    .form-control::placeholder {
+      color: #666 !important;
+    }
+    .char-count {
+      display: block;
+      color: #888;
+      font-size: 12px;
+      margin-top: 5px;
+      text-align: right;
+    }
+    .char-count.warning {
+      color: #f39c12;
+    }
+    .char-count.danger {
+      color: #e74c3c;
+    }
+  </style>
+  <!-- Vertical Blure Line Animation CSS -->
+  <link rel="stylesheet" href="css/vertical-blureline-animation-style.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <style>
+    .lang-switcher {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 10px;
+      border-radius: 25px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .lang-switcher button {
+      background: none;
+      border: none;
+      padding: 5px 15px;
+      margin: 0 5px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .lang-switcher button.active {
+      background: #6c5ce7;
+      color: white;
+    }
+    .lang-switcher button:hover {
+      background: #a29bfe;
+      color: white;
+    }
+    [dir="rtl"] .navbar-nav {
+      margin-right: auto !important;
+      margin-left: 0 !important;
+    }
+    [dir="ltr"] .navbar-nav {
+      margin-left: auto !important;
+      margin-right: 0 !important;
+    }
+   
+
+
+
+    /* Fix RTL text overlap issues */
+    .text_block {
+      text-align: center;
+      white-space: nowrap;
+      padding: 0 10px;
+      min-width: 120px;
+    }
+    .text_list_section .owl-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .text_block span {
+      display: inline-block;
+      font-size: 30px;
+      font-weight: 800;
+    }
+    /* Hide step border lines in Arabic */
+    [dir="rtl"] .steps_block.step_border::after {
+      display: none;
+    }
+    /* Logo styling */
+    .navbar-brand img {
+      width: 200px;
+      height: auto;
+      max-height: 60px;
+    }
+    .footer .logo img {
+      width: 200px;
+      height: auto;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+
+  <!-- Header Start -->
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+          <img id="main-logo" src="images/logo-ar.png" alt="دليل 3030">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <span class="toggle-wrap">
+              <span class="toggle-bar"></span>
+            </span>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features" data-ar="المميزات" data-en="Features">المميزات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how-it-works" data-ar="كيف يعمل" data-en="How It Works">كيف يعمل</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#download" data-ar="تحميل" data-en="Download">تحميل</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="toggleLanguage()" id="lang-toggle" data-ar="EN" data-en="ع">EN</a>
+            </li>
+            <li class="nav-item">
+              <div class="btn_block">
+                <a class="nav-link dark_btn" href="#download" data-ar="حمل التطبيق مجاناً" data-en="Download Free">حمل التطبيق مجاناً</a>
+                <div class="btn_bottom"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner Section Start -->
+  <section class="banner_section" id="home">
+    
+    <!-- vertical blure line animation -->
+    <div class='light x1'></div>
+    <div class='light x2'></div>
+    <div class='light x3'></div>
+    <div class='light x4'></div>
+    <div class='light x5'></div>
+    <div class='light x6'></div>
+    <div class='light x7'></div>
+    <div class='light x8'></div>
+    <div class='light x9'></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-md-12" data-aos="fade-up" data-aos-duration="1500">
+          <div class="banner_text">
+            <div class="type-wrap">
+              <span id="typed" style="white-space:pre;" class="typed"></span>
+            </div>
+            <h1 data-ar="اكتشف أفضل المطاعم والمحلات مع دليل 3030" data-en="Discover the Best Restaurants & Shops with dalel 3030">اكتشف أفضل المطاعم والمحلات مع دليل 3030</h1>
+            <p data-ar="التطبيق الأول في المنطقة لاستكشاف المطاعم والمحلات المميزة، مع خريطة تفاعلية وتقييمات حقيقية وإمكانية الطلب المباشر - مجاناً تماماً!" data-en="The region's first app to explore exceptional restaurants and shops, featuring an interactive map, real reviews, and direct ordering - completely free!">
+              التطبيق الأول في المنطقة لاستكشاف المطاعم والمحلات المميزة، مع خريطة تفاعلية وتقييمات حقيقية وإمكانية الطلب المباشر - مجاناً تماماً!
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-12" data-aos="fade-up" data-aos-duration="1500">
+          <div class="used_app">
+            <ul>
+              <li><img src="images/banavt1.png" alt="مستخدم"></li>
+              <li><img src="images/banavt2.png" alt="مستخدم"></li>
+              <li><img src="images/banavt3.png" alt="مستخدم"></li>
+              <li>
+                <a href="#" class="popup-youtube play-button" data-url="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" data-toggle="modal" data-target="#myModal">
+                  <img src="images/play.png" alt="تشغيل">
+                </a>
+              </li>
+            </ul>
+            <h3 data-ar="أكثر من 50 ألف مستخدم نشط" data-en="50K+ Active Users">أكثر من 50 ألف مستخدم نشط</h3>
+            <p data-ar="أفضل تطبيق لاكتشاف المطاعم والمحلات في منطقتك" data-en="The best app to discover restaurants and shops in your area">أفضل تطبيق لاكتشاف المطاعم والمحلات في منطقتك</p>
+          </div>
+
+          <div class="btn_block">
+            <a href="#download" class="btn puprple_btn ml-0" data-ar="حمل مجاناً الآن" data-en="Download Free Now">حمل مجاناً الآن</a>
+            <div class="btn_bottom"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12">
+          <div class="hero_image"> 
+            <img src="images/hero_image.png" alt="دليل 3030">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section Start -->
+  <section class="our_value_section home_page row_am" id="features">
+    <div class="our_value_innner">
+      <div class="container">
+        <div class="section_title" data-aos="fade-up" data-aos-duration="1500">
+          <span class="title_badge" data-ar="مميزات التطبيق" data-en="App Features">مميزات التطبيق</span>
+          <h2 id="features-title">لماذا <span>دليل 3030</span> هو الأفضل؟</h2>
+        </div>
+
+
+
+        <div class="value_slider" data-aos="fade-in" data-aos-duration="1500">
+          <div class="owl-carousel owl-theme" id="value_slider">
+            <div class="item">
+              <div class="value_block">
+                <div class="icon">
+                  <img src="images/ourvalue_1.png" alt="image">
+                </div>
+                <div class="text">
+                  <h3 data-ar="فريق ماهر" data-en="Skilled Team">فريق ماهر</h3>
+                  <p data-ar="فريق متخصص في تطوير التطبيقات مع خبرة واسعة في مجال المطاعم والتجارة الإلكترونية" data-en="Specialized team in app development with extensive experience in restaurants and e-commerce">
+                    فريق متخصص في تطوير التطبيقات مع خبرة واسعة في مجال المطاعم والتجارة الإلكترونية
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="value_block">
+                <div class="icon">
+                  <img src="images/ourvalue_2.png" alt="image">
+                </div>
+                <div class="text">
+                  <h3 data-ar="تفكير إبداعي" data-en="Creative Thinking">تفكير إبداعي</h3>
+                  <p data-ar="نقدم حلول مبتكرة وأفكار إبداعية لتحسين تجربة المستخدم في اكتشاف المطاعم والطلب" data-en="We provide innovative solutions and creative ideas to improve user experience in discovering restaurants and ordering">
+                    نقدم حلول مبتكرة وأفكار إبداعية لتحسين تجربة المستخدم في اكتشاف المطاعم والطلب
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="value_block">
+                <div class="icon">
+                  <img src="images/ourvalue_3.png" alt="image">
+                </div>
+                <div class="text">
+                  <h3 data-ar="دعم النمو" data-en="Growth Support">دعم النمو</h3>
+                  <p data-ar="ندعم نمو الأعمال المحلية من خلال ربط المطاعم والمحلات بالعملاء بطريقة فعالة" data-en="We support local business growth by effectively connecting restaurants and shops with customers">
+                    ندعم نمو الأعمال المحلية من خلال ربط المطاعم والمحلات بالعملاء بطريقة فعالة
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="value_block">
+                <div class="icon">
+                  <img src="images/ourvalue_1.png" alt="image">
+                </div>
+                <div class="text">
+                  <h3 data-ar="فريق ماهر" data-en="Skilled Team">فريق ماهر</h3>
+                  <p data-ar="فريق متخصص في تطوير التطبيقات مع خبرة واسعة في مجال المطاعم والتجارة الإلكترونية" data-en="Specialized team in app development with extensive experience in restaurants and e-commerce">
+                    فريق متخصص في تطوير التطبيقات مع خبرة واسعة في مجال المطاعم والتجارة الإلكترونية
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Page Wrapper -->
+  <div class="page_wrapper">
+
+    <!-- About Us Start -->
+    <section class="about_section row_am">
+      <div class="container">
+        <div class="section_title" data-aos="fade-up" data-aos-duration="1500">
+          <span class="title_badge mb-1" data-ar="من نحن" data-en="About us">من نحن</span>
+          <h2 id="about-title">تطبيق بأفضل <img src="images/mobileicon.png" alt="image"> واجهة مستخدم <br>
+            يحول <span><img src="images/usericon.png" alt="image"> الزوار</span> إلى <span><img
+                src="images/magnet.png" alt="image"> عملاء</span></h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <ul class="app_statstic" id="counter" data-aos="fade-in" data-aos-duration="1500">
+              <li data-aos="fade-up" data-aos-duration="1500">
+                <div class="text">
+                  <p><span class="counter-value" data-count="50">0</span><span data-ar="ألف+" data-en="K+">ألف+</span></p>
+                  <p data-ar="تحميل" data-en="Downloads">تحميل</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="1500">
+                <div class="text">
+                  <p><span class="counter-value" data-count="1200">0</span><span>+</span></p>
+                  <p data-ar="تقييم" data-en="Reviews">تقييم</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="1500">
+                <div class="text">
+                  <p><span class="counter-value" data-count="15">0</span><span>+</span></p>
+                  <p data-ar="مدينة" data-en="Cities">مدينة</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="1500">
+                <div class="text">
+                  <p><span class="counter-value" data-count="25">0 </span><span data-ar="ألف+" data-en="K+">ألف+</span></p>
+                  <p data-ar="متابع" data-en="Followers">متابع</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="abtImg text-center" data-aos="fade-up" data-aos-duration="1500">
+              <img src="images/appscreen.png" alt="image">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <p data-aos="fade-up" data-aos-duration="1500" data-ar="دليل 3030 هو التطبيق الأول من نوعه في المنطقة لاستكشاف أفضل المطاعم والمحلات. يوفر خريطة تفاعلية مع تقييمات حقيقية وإمكانية الطلب المباشر من خلال الدردشة مع المطاعم." data-en="dalel 3030 is the first app of its kind in the region to explore the best restaurants and shops. It provides an interactive map with real reviews and direct ordering through chat with restaurants.">دليل 3030 هو التطبيق الأول من نوعه في المنطقة لاستكشاف أفضل المطاعم والمحلات. يوفر خريطة تفاعلية مع تقييمات حقيقية وإمكانية الطلب المباشر من خلال الدردشة مع المطاعم.</p>
+            <div class="video_block" data-aos="fade-up" data-aos-duration="1500">
+              <img class="thumbnil" src="images/applicationvideothumb.png" alt="image">
+              <div class="playBtn">
+                <a href="#" class="popup-youtube play-button play_icon"
+                  data-url="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" data-toggle="modal" data-target="#myModal" title="XJj2PbenIsU"><img src="images/play_white.png" alt="img"></a>
+                <img class="spin_text" src="images/playvideotext.png" alt="image">
+              </div>
+            </div>
+            <div class="btn_block" data-aos="fade-up" data-aos-duration="1500">
+              <a href="#download" class="btn puprple_btn ml-0" data-ar="جرب مجاناً" data-en="START FREE TRIAL">جرب مجاناً</a>
+              <div class="btn_bottom"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us End -->
+
+    <!-- Text List flow Section Start -->
+    <div class="text_list_section row_am" data-aos="fade-in" data-aos-duration="1500">
+      <div class="container">
+        <span class="title_badge down_fix" data-ar="لماذا تختار تطبيقنا" data-en="Why choose our app">لماذا تختار تطبيقنا</span>
+      </div>
+      <div class="slider_block">
+        <div class="owl-carousel owl-theme" id="text_list_flow">
+          <div class="item">
+            <div class="text_block">
+              <span data-ar="خريطة تفاعلية" data-en="Interactive map">خريطة تفاعلية</span>
+              <span class="mark_star">•</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="text_block">
+              <span data-ar="سهل الاستخدام" data-en="User friendly">سهل الاستخدام</span>
+              <span class="mark_star">•</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="text_block">
+              <span data-ar="تقييمات حقيقية" data-en="Real reviews">تقييمات حقيقية</span>
+              <span class="mark_star">•</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="text_block">
+              <span data-ar="طلب مباشر" data-en="Direct ordering">طلب مباشر</span>
+              <span class="mark_star">•</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="text_block">
+              <span data-ar="دردشة فورية" data-en="Instant chat">دردشة فورية</span>
+              <span class="mark_star">•</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="text_block">
+              <span data-ar="مجاني تماماً" data-en="Completely free">مجاني تماماً</span>
+              <span class="mark_star">•</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="text_block">
+              <span data-ar="تحديث مستمر" data-en="Regular updates">تحديث مستمر</span>
+              <span class="mark_star">•</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="text_block">
+              <span data-ar="دعم فني" data-en="Technical support">دعم فني</span>
+              <span class="mark_star">•</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Text List flow Section End -->
+
+    <!-- Service Section Start -->
+    <section class="row_am service_section">
+      <div class="container">
+        <div class="section_title" data-aos="fade-up" data-aos-duration="1500">
+          <span class="title_badge mb-1" data-ar="الخدمات" data-en="Services">الخدمات</span>
+          <h2><span data-ar="خدمات مميزة" data-en="Premium services">خدمات مميزة</span> <span data-ar="في تطبيق" data-en="of our">في تطبيق</span> <br>
+            <span data-ar="دليل 3030" data-en="dalel 3030">دليل 3030</span></h2>
+        </div>
+        <div class="row service_blocks">
+          <div class="col-md-6">
+            <div class="service_text" data-aos="fade-up" data-aos-duration="1500">
+              <div class="service_badge"><i class="icofont-google-map"></i>
+                <span data-ar="الخريطة التفاعلية" data-en="Interactive Map">الخريطة التفاعلية</span>
+              </div>
+              <h2><span data-ar="اكتشف" data-en="Discover">اكتشف</span> <span data-ar="أقرب المطاعم" data-en="nearest restaurants">أقرب المطاعم</span> <br>
+                <span data-ar="والمحلات إليك" data-en="and shops to you">والمحلات إليك</span></h2>
+              <p data-ar="استخدم الخريطة التفاعلية لاستكشاف أفضل المطاعم والمحلات في منطقتك مع عرض التقييمات والمسافة والأسعار." data-en="Use the interactive map to explore the best restaurants and shops in your area with ratings, distance, and prices displayed.">استخدم الخريطة التفاعلية لاستكشاف أفضل المطاعم والمحلات في منطقتك مع عرض التقييمات والمسافة والأسعار.</p>
+              <ul class="listing_block">
+                <li>
+                  <div class="icon">
+                    <span><i class="icofont-ui-check"></i></span>
+                  </div>
+                  <div class="text">
+                    <h3 data-ar="عرض المسافة والوقت" data-en="Show distance and time">عرض المسافة والوقت</h3>
+                    <p data-ar="اعرف كم تبعد عنك المطاعم والوقت المتوقع للوصول" data-en="Know how far restaurants are from you and expected arrival time">اعرف كم تبعد عنك المطاعم والوقت المتوقع للوصول</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span><i class="icofont-ui-check"></i></span>
+                  </div>
+                  <div class="text">
+                    <h3 data-ar="تقييمات فورية" data-en="Instant reviews">تقييمات فورية</h3>
+                    <p data-ar="شاهد تقييمات المستخدمين الحقيقية لكل مطعم ومحل" data-en="See real user reviews for every restaurant and shop">شاهد تقييمات المستخدمين الحقيقية لكل مطعم ومحل</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="btn_block">
+                <a href="#download" class="btn puprple_btn ml-0" data-ar="جرب الآن" data-en="Try Now">جرب الآن</a>
+                <div class="btn_bottom"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="inner_block" data-aos="fade-up" data-aos-duration="1500">
+              <div class="star_img">
+                <img src="images/bigstar.png" alt="" srcset="">
+                <img src="images/smallStar.png" alt="" srcset="">
+              </div>
+              <div class="img">
+                <img src="images/service_1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row service_blocks flex-row-reverse">
+          <div class="col-md-6">
+            <div class="service_text right_side" data-aos="fade-up" data-aos-duration="1500">
+              <div class="service_badge"><i class="icofont-chat"></i>
+                <span data-ar="الطلب والدردشة" data-en="Order & Chat">الطلب والدردشة</span>
+              </div>
+              <h2><span data-ar="اطلب مباشرة" data-en="Order directly">اطلب مباشرة</span> <span data-ar="من خلال" data-en="through">من خلال</span>
+                <span data-ar="الدردشة" data-en="chat">الدردشة</span></h2>
+              <p data-ar="تواصل مباشرة مع المطاعم والمحلات من خلال الدردشة الفورية واطلب ما تريد بسهولة ووضوح." data-en="Communicate directly with restaurants and shops through instant chat and order what you want easily and clearly.">تواصل مباشرة مع المطاعم والمحلات من خلال الدردشة الفورية واطلب ما تريد بسهولة ووضوح.</p>
+              <ul class="feature_list">
+                <li>
+                  <div class="icon">
+                    <span><i class="icofont-check-circled"></i></span>
+                  </div>
+                  <div class="text">
+                    <p data-ar="دردشة فورية مع المطاعم" data-en="Instant chat with restaurants">دردشة فورية مع المطاعم</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span><i class="icofont-check-circled"></i></span>
+                  </div>
+                  <div class="text">
+                    <p data-ar="طلب مخصص حسب رغبتك" data-en="Custom order as you wish">طلب مخصص حسب رغبتك</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span><i class="icofont-check-circled"></i></span>
+                  </div>
+                  <div class="text">
+                    <p data-ar="تأكيد فوري للطلب" data-en="Instant order confirmation">تأكيد فوري للطلب</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="btn_block">
+                <a href="#download" class="btn puprple_btn ml-0" data-ar="جرب الآن" data-en="Try Now">جرب الآن</a>
+                <div class="btn_bottom"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="inner_block rotate_right" data-aos="fade-up" data-aos-duration="1500">
+              <div class="star_img">
+                <img src="images/bigstar.png" alt="" srcset="">
+                <img src="images/smallStar.png" alt="" srcset="">
+              </div>
+              <div class="img">
+                <img src="images/service_2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row service_blocks">
+          <div class="col-md-6">
+            <div class="service_text" data-aos="fade-up" data-aos-duration="1500">
+              <div class="service_badge"><i class="icofont-star"></i> <span data-ar="التقييمات" data-en="Reviews">التقييمات</span></div>
+              <h2><span data-ar="تقييمات حقيقية" data-en="Real reviews">تقييمات حقيقية</span> <span data-ar="من" data-en="from">من</span>
+                <span data-ar="المستخدمين" data-en="users">المستخدمين</span></h2>
+              <p data-ar="اقرأ تجارب المستخدمين الحقيقية وشاهد صورهم للطعام والخدمة قبل اتخاذ قرارك." data-en="Read real user experiences and see their photos of food and service before making your decision.">اقرأ تجارب المستخدمين الحقيقية وشاهد صورهم للطعام والخدمة قبل اتخاذ قرارك.</p>
+              <ul class="feature_list">
+                <li>
+                  <div class="icon">
+                    <span><i class="icofont-check-circled"></i></span>
+                  </div>
+                  <div class="text">
+                    <p data-ar="تقييمات مفصلة للطعام والخدمة" data-en="Detailed food and service reviews">تقييمات مفصلة للطعام والخدمة</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span><i class="icofont-check-circled"></i></span>
+                  </div>
+                  <div class="text">
+                    <p data-ar="صور حقيقية من المستخدمين" data-en="Real photos from users">صور حقيقية من المستخدمين</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span><i class="icofont-check-circled"></i></span>
+                  </div>
+                  <div class="text">
+                    <p data-ar="نظام تقييم شفاف وعادل" data-en="Transparent and fair rating system">نظام تقييم شفاف وعادل</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="btn_block">
+                <a href="#download" class="btn puprple_btn ml-0" data-ar="جرب الآن" data-en="Try Now">جرب الآن</a>
+                <div class="btn_bottom"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="inner_block" data-aos="fade-up" data-aos-duration="1500">
+              <div class="star_img">
+                <img src="images/bigstar.png" alt="" srcset="">
+                <img src="images/smallStar.png" alt="" srcset="">
+              </div>
+              <div class="img">
+                <img src="images/service_3.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service Section End -->
+
+  <!-- How It Works Section Start -->
+  <section class="how_it_section" id="how-it-works">
+    <div class="how_it_inner" data-aos="fade-in" data-aos-duration="1500">
+      <div class="container">
+        <div class="section_title" data-aos="fade-up" data-aos-duration="1500">
+          <span class="title_badge" data-ar="سهل وسريع" data-en="Quick & Easy">سهل وسريع</span>
+          <h2 data-ar="كيف يعمل في 3 خطوات بسيطة" data-en="How it works in 3 simple steps">كيف يعمل في 3 خطوات بسيطة</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="steps_block step_border" data-aos="fade-up" data-aos-duration="1500">
+              <div class="steps">
+                <div class="icon">
+                  <img src="images/howstep1.png" alt="image">
+                </div>
+                <div class="text">
+                  <h3 data-ar="حمل التطبيق" data-en="Download App">حمل التطبيق</h3>
+                  <ul class="social">
+                    <li><a href="#"><i class="icofont-brand-android-robot"></i></a></li>
+                    <li><a href="#"><i class="icofont-brand-apple"></i></a></li>
+                  </ul>
+                  <p data-ar="حمل النسخه الرسميه من التطبيق مجاناً من متجر التطبيقات" data-en="Download the official mobile app completely for free today from the app store">حمل التطبيق مجاناً من متجر التطبيقات</p>
+                </div>
+              </div>
+              <span class="step">01</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="steps_block step_border" data-aos="fade-up" data-aos-duration="1500">
+              <div class="steps">
+                <div class="icon">
+                  <img src="images/howstep2.png" alt="image">
+                </div>
+                <div class="text">
+                  <h3 data-ar="استكشف الخريطة" data-en="Explore Map">استكشف الخريطة</h3>
+                  <span class="tag_text" data-ar="اكتشف ما حولك" data-en="Discover around you">اكتشف ما حولك</span>
+                  <p data-ar="تصفح الخريطة واكتشف أفضل المطاعم والمحلات القريبة منك" data-en="Browse the map and discover the best restaurants and shops near you">تصفح الخريطة واكتشف أفضل المطاعم والمحلات القريبة منك</p>
+                </div>
+              </div>
+              <span class="step">02</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="steps_block" data-aos="fade-up" data-aos-duration="1500">
+              <div class="steps">
+                <div class="icon">
+                  <img src="images/howstep3.png" alt="image">
+                </div>
+                <div class="text">
+                  <h3 data-ar="اطلب واستمتع" data-en="Order & Enjoy">اطلب واستمتع</h3>
+                  <span class="tag_text" data-ar="دردشة مباشرة" data-en="Direct chat">دردشة مباشرة</span>
+                  <p data-ar="اضغط على المطعم للدردشة المباشرة والطلب بسهولة" data-en="Tap on the restaurant for direct chat and easy ordering">اضغط على المطعم للدردشة المباشرة والطلب بسهولة</p>
+                </div>
+              </div>
+              <span class="step">03</span>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <div class="btn_block">
+            <a href="#download" class="btn puprple_btn ml-0" data-ar="ابدأ الآن" data-en="Get Started Now">ابدأ الآن</a>
+            <div class="btn_bottom"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- How It Work Section End -->
+  </div>
+  <!-- Wraper End -->
+
+    <!-- Beautifull-interface-Section start -->
+    <section class="row_am interface_section" >
+      <!-- container start -->
+      <div class="container-fluid">
+        <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+          <span class="title_badge" data-ar="شاشات التطبيق" data-en="App screens">شاشات التطبيق</span>
+          <h2><span data-ar="واجهة" data-en="Userfriendly">واجهة</span> <span data-ar="سهلة الاستخدام" data-en="interface design">سهلة الاستخدام</span></h2>
+        </div>
+
+        <!-- screen slider start -->
+        <div class="screen_slider" data-aos="fade-up" data-aos-duration="1500">
+          <div id="screen_slider" class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="screen_frame_img">
+                <img src="images/intrscrn1.png" alt="image">
+              </div>
+            </div>
+            <div class="item">
+              <div class="screen_frame_img">
+                <img src="images/intrscrn2.png" alt="image">
+              </div>
+            </div>
+            <div class="item">
+              <div class="screen_frame_img">
+                <img src="images/intrscrn3.png" alt="image">
+              </div>
+            </div>
+            <div class="item">
+              <div class="screen_frame_img">
+                <img src="images/intrscrn4.png" alt="image">
+              </div>
+            </div>
+            <div class="item">
+              <div class="screen_frame_img">
+                <img src="images/intrscrn5.png" alt="image">
+              </div>
+            </div>
+            <div class="item">
+              <div class="screen_frame_img">
+                <img src="images/intrscrn2.png" alt="image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- screen slider end -->
+      </div>
+      <!-- container end -->
+    </section>
+    <!-- Beautifull-interface-Section end -->
+
+    <!-- App Download Section Start -->
+  <section class="row_am download_app" id="download">
+    <div class="task_block" data-aos="fade-up" data-aos-duration="1500">
+      <!-- vertical blure line animation -->
+      <div class='light x1'></div>
+      <div class='light x2'></div>
+      <div class='light x3'></div>
+      <div class='light x4'></div>
+      <div class='light x5'></div>
+      <div class='light x6'></div>
+      <div class='light x7'></div>
+      <div class='light x8'></div>
+      <div class='light x9'></div>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <div class="task_text">
+            <div class="section_title white_text" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+              <span class="title_badge" data-ar="تحميل" data-en="Download">تحميل</span>
+              <h2 data-ar="دليل 3030 متاح الآن على أندرويد و iOS" data-en="dalel 3030 is now available on Android & iOS">دليل 3030 متاح الآن على أندرويد و iOS</h2>
+              <p data-ar="حمل التطبيق مجاناً واستمتع بأفضل تجربة لاكتشاف المطاعم والمحلات في منطقتك" data-en="Download the app for free and enjoy the best experience discovering restaurants and shops in your area">
+                حمل التطبيق مجاناً واستمتع بأفضل تجربة لاكتشاف المطاعم والمحلات في منطقتك
+              </p>
+            </div>
+            <ul class="app_btn" data-aos="fade-up" data-aos-duration="1500">
+              <li>
+                <a href="#">
+                  <img class="blue_img" src="images/black_google_play.png" alt="Google Play">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="blue_img" src="images/black_appstore.png" alt="App Store">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="task_img" data-aos="fade-in" data-aos-duration="1500">
+            <div class="frame_img">
+              <img src="images/our_app.png" alt="دليل 3030">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section Start -->
+  <section class="contact_section row_am" id="contact">
+    <div class="container">
+      <div class="section_title" data-aos="fade-up" data-aos-duration="1500">
+        <span class="title_badge" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</span>
+        <h2 data-ar="تواصل معنا" data-en="Get In Touch">تواصل معنا</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-duration="1500">
+          <div class="contact_form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" placeholder="الاسم" data-ar-placeholder="الاسم" data-en-placeholder="Name" minlength="2" maxlength="50" pattern="[a-zA-Zء-ي\s]+" required>
+                <small class="char-count" data-ar="الحد الأقصى: 50 حرف" data-en="Max: 50 characters">الحد الأقصى: 50 حرف</small>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="البريد الإلكتروني" data-ar-placeholder="البريد الإلكتروني" data-en-placeholder="Email" maxlength="100" required>
+                <small class="char-count" data-ar="الحد الأقصى: 100 حرف" data-en="Max: 100 characters">الحد الأقصى: 100 حرف</small>
+              </div>
+              <div class="form-group">
+                <input type="tel" name="phone" class="form-control" placeholder="رقم الهاتف" data-ar-placeholder="رقم الهاتف" data-en-placeholder="Phone" pattern="[0-9+\-\s()]+" minlength="10" maxlength="20" required>
+                <small class="char-count" data-ar="الحد الأقصى: 20 رقم" data-en="Max: 20 digits">الحد الأقصى: 20 رقم</small>
+              </div>
+              <div class="form-group">
+                <textarea name="message" class="form-control" rows="5" placeholder="الرسالة" data-ar-placeholder="الرسالة" data-en-placeholder="Message" minlength="10" maxlength="500" required></textarea>
+                <small class="char-count message-count" data-ar="0/500 حرف" data-en="0/500 characters">0/500 حرف</small>
+              </div>
+              <button type="submit" id="submitBtn" class="btn puprple_btn" data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12" data-aos="fade-left" data-aos-duration="1500">
+          <div class="contact_info">
+            <div class="contact_block">
+              <div class="icon">
+                <i class="icofont-phone"></i>
+              </div>
+              <div class="text">
+                <h4 data-ar="اتصل بنا" data-en="Call Us">اتصل بنا</h4>
+                <p dir="ltr">+971 56 478 0473</p>
+              </div>
+            </div>
+            <div class="contact_block">
+              <div class="icon">
+                <i class="icofont-email"></i>
+              </div>
+              <div class="text">
+                <h4 data-ar="راسلنا" data-en="Email Us">راسلنا</h4>
+                <a href="mailto:info@wajhat3030.com">info@wajhat3030.com</a>
+              </div>
+            </div>
+            <div class="contact_block">
+              <div class="icon">
+                <i class="icofont-location-pin"></i>
+              </div>
+              <div class="text">
+                <h4 data-ar="موقعنا" data-en="Our Location">موقعنا</h4>
+                <p data-ar="دبي , الامارات العربيه المتحده " data-en="dubia, United Arab Emirates"> دبي , الامارات العربيه المتحده  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section Start -->
+  <footer class="white_text" data-aos="fade-in" data-aos-duration="1500">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="logo_side">
+            <div class="logo">
+              <a href="#">
+                <img id="footer-logo" src="images/logo-ar.png" alt="دليل 3030">
+              </a>
+            </div>
+            <div class="news_letter">
+              <h3 data-ar="اشترك في النشرة الإخبارية" data-en="Subscribe Newsletter">اشترك في النشرة الإخبارية</h3>
+              <p data-ar="كن أول من يحصل على آخر التحديثات والعروض" data-en="Be the first to receive latest updates and offers">كن أول من يحصل على آخر التحديثات والعروض</p>
+              <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="أدخل بريدك الإلكتروني" data-ar-placeholder="أدخل بريدك الإلكتروني" data-en-placeholder="Enter your email">
+                  <button class="btn"><i class="icofont-paper-plane"></i></button>
+                </div>
+                <p class="note" data-ar="بالضغط على إرسال فإنك توافق على استلام الرسائل" data-en="By clicking send you agree to receive messages">بالضغط على إرسال فإنك توافق على استلام الرسائل</p>
+              </form>
+            </div>
+            <ul class="contact_info">
+              <li><a href="mailto:info@wajhat3030.com">info@wajhat3030.com</a></li>
+              <li><a href="tel:+971 56 478 0473">+971 56 478 0473</a></li>
+            </ul>
+            <ul class="social_media">
+              <li><a href="#"><i class="icofont-facebook"></i></a></li>
+              <li><a href="#"><i class="icofont-twitter"></i></a></li>
+              <li><a href="#"><i class="icofont-instagram"></i></a></li>
+              <li><a href="#"><i class="icofont-whatsapp"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="download_side">
+            <h3 data-ar="حمل التطبيق" data-en="Download App">حمل التطبيق</h3>
+            <ul class="app_btn">
+              <li>
+                <a href="#">
+                  <img class="blue_img" src="images/googleplay.png" alt="Google Play">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="blue_img" src="images/appstorebtn.png" alt="App Store">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="ft_inner">
+          <div class="copy_text">
+            <p data-ar="© جميع الحقوق محفوظة 2024 - دليل 3030" data-en="© 2024 dalel 3030. All rights reserved.">© جميع الحقوق محفوظة 2024 - دليل 3030</p>
+          </div>
+          <ul class="links">
+            <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+            <li><a href="#features" data-ar="المميزات" data-en="Features">المميزات</a></li>
+            <li><a href="#download" data-ar="تحميل" data-en="Download">تحميل</a></li>
+          </ul>
+          <div class="design_by">
+            <p><span data-ar="مدعوم بواسطة" data-en="Powered by">مدعوم بواسطة</span> <a href="https://bassitah.7tteam.com" target="_blank">7T Team X bassitah</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Go Top Button -->
+  <div class="go_top" id="Gotop">
+    <span><i class="icofont-arrow-up"></i></span>
+  </div>
+
+  <!-- Video Modal Start -->
+  <div class="modal fade youtube-video" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button id="close-video" type="button" class="button btn btn-default text-right" data-dismiss="modal">
+          <i class="icofont-close-line-circled"></i>
+        </button>
+        <div class="modal-body">
+          <div id="video-container" class="video-container">
+            <iframe id="youtubevideo" width="640" height="360" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/jquery.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    // Toggle language function
+    function toggleLanguage() {
+      const currentLang = document.getElementById('html-root').getAttribute('lang');
+      const newLang = currentLang === 'ar' ? 'en' : 'ar';
+      switchLanguage(newLang);
+    }
+    
+    // Language switching functionality
+    function switchLanguage(lang) {
+      const html = document.getElementById('html-root');
+      const elements = document.querySelectorAll('[data-ar][data-en]');
+      const placeholders = document.querySelectorAll('[data-ar-placeholder][data-en-placeholder]');
+      
+      // Update HTML attributes
+      if (lang === 'ar') {
+        html.setAttribute('lang', 'ar');
+        html.setAttribute('dir', 'rtl');
+        document.getElementById('page-title').textContent = 'دليل 3030 - اكتشف أفضل المطاعم والمحلات';
+        document.getElementById('lang-toggle').textContent = 'EN';
+        document.getElementById('main-logo').src = 'images/logo-ar.png';
+        document.getElementById('footer-logo').src = 'images/logo-ar.png';
+      } else {
+        html.setAttribute('lang', 'en');
+        html.setAttribute('dir', 'ltr');
+        document.getElementById('page-title').textContent = 'dalel 3030 - Discover Best Restaurants & Shops';
+        document.getElementById('lang-toggle').textContent = 'ع';
+        document.getElementById('main-logo').src = 'images/logo.png';
+        document.getElementById('footer-logo').src = 'images/logo.png';
+      }
+      
+      // Update text content
+      elements.forEach(element => {
+        const newText = element.getAttribute('data-' + lang);
+        if (newText) {
+          element.textContent = newText;
+        }
+      });
+      
+      // Update specific titles with HTML content
+      const featuresTitle = document.getElementById('features-title');
+      const aboutTitle = document.getElementById('about-title');
+      
+      if (lang === 'ar') {
+        featuresTitle.innerHTML = 'لماذا <span>دليل 3030</span> هو الأفضل؟';
+        aboutTitle.innerHTML = 'تطبيق بأفضل <img src="images/mobileicon.png" alt="image"> واجهة مستخدم <br> يحول <span><img src="images/usericon.png" alt="image"> الزوار</span> إلى <span><img src="images/magnet.png" alt="image"> عملاء</span>';
+      } else {
+        featuresTitle.innerHTML = 'Why <span>dalel 3030</span> is the Best?';
+        aboutTitle.innerHTML = 'Application with the best <img src="images/mobileicon.png" alt="image"> user <br> interface convert <span><img src="images/usericon.png" alt="image"> visitor</span> into <span><img src="images/magnet.png" alt="image"> leads</span>';
+      }
+      
+      // Update placeholders
+      placeholders.forEach(element => {
+        element.setAttribute('placeholder', element.getAttribute('data-' + lang + '-placeholder'));
+      });
+      
+      // Reinitialize carousels for RTL support
+      reinitializeCarousels(lang);
+      
+      // Update typed text
+      updateTypedText(lang);
+      
+      // Update URL
+      const url = new URL(window.location);
+      url.searchParams.set('lang', lang);
+      window.history.pushState({}, '', url);
+    }
+    
+    function updateTypedText(lang) {
+      const typedStrings = {
+        ar: ["اكتشف أفضل المطاعم حولك", "اطلب طعامك المفضل بسهولة", "دليلك الشامل للمطاعم والمحلات"],
+        en: ["Discover the best restaurants around you", "Order your favorite food easily", "Your complete guide to restaurants and shops"]
+      };
+      
+      // Check if element exists
+      const typedElement = document.getElementById('typed');
+      if (!typedElement) {
+        console.log('Typed element not found');
+        return;
+      }
+      
+      // Destroy existing instance
+      if (window.typed && typeof window.typed.destroy === 'function') {
+        window.typed.destroy();
+        window.typed = null;
+      }
+      
+      // Clear the element
+      typedElement.innerHTML = '';
+      
+      // Check if Typed is available
+      if (typeof Typed !== 'undefined') {
+        try {
+          window.typed = new Typed("#typed", {
+            strings: typedStrings[lang],
+            typeSpeed: 100,
+            startDelay: 500,
+            backSpeed: 60,
+            backDelay: 2000,
+            loop: true,
+            cursorChar: "|",
+            contentType: 'html'
+          });
+          console.log('Typed initialized successfully');
+        } catch (error) {
+          console.error('Error initializing Typed:', error);
+        }
+      } else {
+        console.error('Typed library not loaded');
+      }
+    }
+    
+    function reinitializeCarousels(lang) {
+      if (typeof $.fn.owlCarousel !== 'undefined') {
+        // Value slider (features carousel)
+        const $valueSlider = $('#value_slider');
+        if ($valueSlider.length) {
+          if ($valueSlider.hasClass('owl-loaded')) {
+            $valueSlider.trigger('destroy.owl.carousel');
+          }
+          $valueSlider.owlCarousel({
+            rtl: lang === 'ar',
+            loop: true,
+            margin: 30,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            responsive: {
+              0: { items: 1 },
+              768: { items: 2 },
+              1000: { items: 4 }
+            }
+          });
+        }
+        
+        // Text list flow carousel
+        const $textListFlow = $('#text_list_flow');
+        if ($textListFlow.length) {
+          if ($textListFlow.hasClass('owl-loaded')) {
+            $textListFlow.trigger('destroy.owl.carousel');
+          }
+          $textListFlow.owlCarousel({
+            rtl: lang === 'ar',
+            loop: true,
+            margin: 15,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+              0: { items: 1 },
+              480: { items: 2 },
+              768: { items: 3 },
+              1000: { items: 5 }
+            }
+          });
+        }
+        
+        // Screen slider carousel
+        const $screenSlider = $('#screen_slider');
+        if ($screenSlider.length) {
+          if ($screenSlider.hasClass('owl-loaded')) {
+            $screenSlider.trigger('destroy.owl.carousel');
+          }
+          $screenSlider.owlCarousel({
+            rtl: lang === 'ar',
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+              0: { items: 1 },
+              600: { items: 2 },
+              1000: { items: 5 }
+            }
+          });
+        }
+      }
+    }
+    
+    // Initialize language from URL parameter
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const lang = urlParams.get('lang') || 'ar';
+      
+      // Initialize typed text first
+      setTimeout(function() {
+        updateTypedText(lang);
+      }, 500);
+      
+      switchLanguage(lang);
+      
+      // Initialize other scripts
+      $(document).ready(function () {
+        let cardBlock = document.querySelectorAll('.task_block');
+        let topStyle = 120;
+
+        cardBlock.forEach((card) => {
+          card.style.top = `${topStyle}px`;
+          topStyle += 30;
+        });
+        
+        // Initialize typed text after DOM is ready
+        setTimeout(function() {
+          if (typeof Typed !== 'undefined' && document.getElementById('typed')) {
+            updateTypedText(lang);
+          }
+        }, 1000);
+
+      });
+    });
+    
+    // Toast Notification System
+    function showToast(message, type = 'success') {
+      let container = document.querySelector('.toast-container');
+      if (!container) {
+        container = document.createElement('div');
+        container.className = 'toast-container';
+        document.body.appendChild(container);
+      }
+      
+      const toast = document.createElement('div');
+      toast.className = `toast ${type}`;
+      toast.innerHTML = message;
+      container.appendChild(toast);
+      
+      setTimeout(() => toast.classList.add('show'), 100);
+      setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => container.removeChild(toast), 300);
+      }, 4000);
+    }
+
+    // Character Counter
+    $(document).ready(function() {
+      $('textarea[name="message"]').on('input', function() {
+        const currentLength = $(this).val().length;
+        const counter = $('.message-count');
+        const currentLang = document.documentElement.dir === 'rtl' ? 'ar' : 'en';
+        
+        const text = currentLang === 'ar' ? `${currentLength}/500 حرف` : `${currentLength}/500 characters`;
+        counter.text(text);
+        
+        if (currentLength > 450) {
+          counter.addClass('danger');
+        } else if (currentLength > 350) {
+          counter.addClass('warning');
+        } else {
+          counter.removeClass('warning danger');
+        }
+      });
+    });
+
+    // Contact Form Handler
+    $(document).ready(function() {
+      $('#contactForm').on('submit', function(e) {
+        e.preventDefault();
+        
+        const submitBtn = $('#submitBtn');
+        const currentLang = document.documentElement.dir === 'rtl' ? 'ar' : 'en';
+        
+        const formData = {
+          name: $('input[name="name"]').val().trim(),
+          email: $('input[name="email"]').val().trim(),
+          phone: $('input[name="phone"]').val().trim(),
+          message: $('textarea[name="message"]').val().trim()
+        };
+        
+        // Advanced Validation
+        if (formData.name.length < 2 || formData.name.length > 50) {
+          const errorMsg = currentLang === 'ar' ? 'الاسم يجب أن يكون بين 2-50 حرف' : 'Name must be 2-50 characters';
+          showToast(errorMsg, 'error');
+          return;
+        }
+        
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+          const errorMsg = currentLang === 'ar' ? 'يرجى إدخال بريد إلكتروني صحيح' : 'Please enter a valid email';
+          showToast(errorMsg, 'error');
+          return;
+        }
+        
+        if (!/^[0-9+\-\s()]{10,20}$/.test(formData.phone)) {
+          const errorMsg = currentLang === 'ar' ? 'رقم الهاتف يجب أن يكون 10-20 رقم' : 'Phone must be 10-20 digits';
+          showToast(errorMsg, 'error');
+          return;
+        }
+        
+        if (formData.message.length < 10 || formData.message.length > 500) {
+          const errorMsg = currentLang === 'ar' ? 'الرسالة يجب أن تكون بين 10-500 حرف' : 'Message must be 10-500 characters';
+          showToast(errorMsg, 'error');
+          return;
+        }
+        
+        // Show loading
+        const loadingMsg = currentLang === 'ar' ? 'جاري إرسال الرسالة...' : 'Sending message...';
+        showToast(loadingMsg, 'info');
+        submitBtn.prop('disabled', true).text(currentLang === 'ar' ? 'جاري الإرسال...' : 'Sending...');
+        
+        // Send email using Web3Forms with proper headers
+        const emailData = {
+          access_key: '15fc23af-40b9-402a-8f6e-dd0819ba6ed3',
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          subject: `رسالة جديدة من موقع دليل 3030 - ${formData.name}`
+        };
+        
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(emailData)
+        })
+        .then(async (response) => {
+          let json = await response.json();
+          if (response.status == 200) {
+            const successMsg = currentLang === 'ar' ? 'تم إرسال الرسالة بنجاح!' : 'Message sent successfully!';
+            showToast(successMsg, 'success');
+            $('#contactForm')[0].reset();
+          } else {
+            throw new Error(json.message || 'Failed to send');
+          }
+        })
+        .catch(error => {
+          console.log(error);
+          const errorMsg = currentLang === 'ar' ? 'حدث خطأ في الإرسال. يرجى المحاولة مرة أخرى' : 'Failed to send message. Please try again';
+          showToast(errorMsg, 'error');
+        })
+        .finally(() => {
+          const originalText = currentLang === 'ar' ? 'إرسال الرسالة' : 'Send Message';
+          submitBtn.prop('disabled', false).text(originalText);
+        });
+      });
+    });
+
+  </script>
+
+</body>
+</html>
