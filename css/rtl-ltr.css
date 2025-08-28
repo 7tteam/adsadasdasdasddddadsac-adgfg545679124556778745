@@ -1,0 +1,312 @@
+/* نظام CSS محسن للغات RTL/LTR */
+
+/* إعدادات عامة للغة العربية (RTL) */
+.rtl-lang {
+    direction: rtl;
+    text-align: right;
+}
+
+.rtl-lang * {
+    font-family: 'Manrope', 'Arial', sans-serif;
+}
+
+/* إعدادات عامة للغة الإنجليزية (LTR) */
+.ltr-lang {
+    direction: ltr;
+    text-align: left;
+}
+
+/* زر تبديل اللغة */
+.language-toggle-btn {
+    background-color: var(--bg-white);
+    color: var(--dark-black);
+    border: 1px solid var(--primery);
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+}
+
+.language-toggle-btn:hover {
+    background-color: var(--primery);
+    color: var(--text-white);
+    transform: translateY(-2px);
+}
+
+.rtl-lang .language-toggle-btn {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+/* تعديلات الهيدر للغات */
+.rtl-lang .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 40px 12px;
+}
+
+.ltr-lang .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 40px 12px;
+}
+
+/* تعديلات النصوص */
+.rtl-lang h1, .rtl-lang h2, .rtl-lang h3, .rtl-lang h4, .rtl-lang h5, .rtl-lang h6 {
+    text-align: right;
+}
+
+.ltr-lang h1, .ltr-lang h2, .ltr-lang h3, .ltr-lang h4, .ltr-lang h5, .ltr-lang h6 {
+    text-align: left;
+}
+
+/* تعديلات الأزرار */
+.rtl-lang .puprple_btn {
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+.ltr-lang .puprple_btn {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+/* تعديلات القوائم */
+.rtl-lang .app_btn li:last-child {
+    margin-right: 25px;
+    margin-left: 0;
+}
+
+.ltr-lang .app_btn li:last-child {
+    margin-left: 25px;
+    margin-right: 0;
+}
+
+/* تعديلات النماذج */
+.rtl-lang .form-control {
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 50px;
+}
+
+.ltr-lang .form-control {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+/* تعديلات الأيقونات */
+.rtl-lang .news_letter form .form-group button {
+    right: auto;
+    left: 5px;
+}
+
+.ltr-lang .news_letter form .form-group button {
+    right: 5px;
+    left: auto;
+}
+
+/* تعديلات المحاذاة للأقسام */
+.rtl-lang .section_title {
+    text-align: center;
+}
+
+.rtl-lang .task_text .section_title {
+    text-align: right;
+}
+
+.ltr-lang .task_text .section_title {
+    text-align: left;
+}
+
+/* تعديلات الفوتر */
+.rtl-lang .footer_bottom .ft_inner {
+    flex-direction: row-reverse;
+}
+
+.rtl-lang .download_side {
+    text-align: left;
+}
+
+.ltr-lang .download_side {
+    text-align: right;
+}
+
+/* تعديلات الروابط */
+.rtl-lang .footer_bottom .ft_inner .links li:not(:last-child)::after {
+    margin: 0 10px;
+}
+
+.ltr-lang .footer_bottom .ft_inner .links li:not(:last-child)::after {
+    margin: 0 10px;
+}
+
+/* تعديلات الشبكة */
+.rtl-lang .service_text {
+    padding-left: 150px;
+    padding-right: 0;
+}
+
+.rtl-lang .service_text.right_side {
+    padding-right: 150px;
+    padding-left: 0;
+}
+
+.ltr-lang .service_text {
+    padding-right: 150px;
+    padding-left: 0;
+}
+
+.ltr-lang .service_text.right_side {
+    padding-left: 150px;
+    padding-right: 0;
+}
+
+/* تعديلات الأيقونات والرموز */
+.rtl-lang .service_text .listing_block li .icon {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.ltr-lang .service_text .listing_block li .icon {
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+/* تعديلات التقييمات */
+.rtl-lang .coustomer_info .avtar {
+    flex-direction: row-reverse;
+}
+
+.rtl-lang .coustomer_info .star {
+    justify-content: flex-start;
+}
+
+.ltr-lang .coustomer_info .star {
+    justify-content: flex-end;
+}
+
+/* تعديلات الإحصائيات */
+.rtl-lang .google_rating {
+    flex-direction: row-reverse;
+}
+
+.rtl-lang .google_rating p img {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.ltr-lang .google_rating p img {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+/* تعديلات الشرائح */
+.rtl-lang .testimonial_box {
+    flex-direction: row-reverse;
+}
+
+.rtl-lang .testimonial_box .testi_text {
+    text-align: right;
+}
+
+.ltr-lang .testimonial_box .testi_text {
+    text-align: left;
+}
+
+/* تعديلات المدونة */
+.rtl-lang .blog_listings .listing_block {
+    flex-direction: row-reverse;
+}
+
+.rtl-lang .blog_listings .listing_block .blog_text {
+    padding: 0 60px 0 15px;
+}
+
+.ltr-lang .blog_listings .listing_block .blog_text {
+    padding: 0 15px 0 60px;
+}
+
+/* تعديلات التنقل */
+.rtl-lang .pagination_block ul {
+    flex-direction: row-reverse;
+}
+
+/* تعديلات الاتصال */
+.rtl-lang .contact_form form .form-group select {
+    background-position: left 1rem center;
+}
+
+.ltr-lang .contact_form form .form-group select {
+    background-position: right 1rem center;
+}
+
+/* تعديلات الأنيميشن */
+.rtl-lang .moving_animation {
+    animation-direction: reverse;
+}
+
+/* تعديلات الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .rtl-lang .service_text,
+    .rtl-lang .service_text.right_side {
+        padding: 0 15px;
+    }
+    
+    .ltr-lang .service_text,
+    .ltr-lang .service_text.right_side {
+        padding: 0 15px;
+    }
+    
+    .rtl-lang .banner_section .banner_text p {
+        padding: 0;
+    }
+    
+    .ltr-lang .banner_section .banner_text p {
+        padding: 0;
+    }
+    
+    .language-toggle-btn {
+        padding: 6px 15px;
+        font-size: 12px;
+        margin: 0 10px;
+    }
+}
+
+/* تحسينات إضافية للخطوط العربية */
+.rtl-lang {
+    font-feature-settings: "liga" 1, "kern" 1;
+    text-rendering: optimizeLegibility;
+}
+
+/* تحسينات للنصوص الطويلة */
+.rtl-lang p, .rtl-lang li {
+    line-height: 1.8;
+    word-spacing: 0.1em;
+}
+
+.ltr-lang p, .ltr-lang li {
+    line-height: 1.7;
+}
+
+/* تعديلات للعناصر المخفية */
+.rtl-lang .section_title h2 span img {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.ltr-lang .section_title h2 span img {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/* تأثيرات الانتقال السلس */
+* {
+    transition: direction 0.3s ease, text-align 0.3s ease;
+}
+
+/* تحسينات للطباعة */
+@media print {
+    .language-toggle-btn {
+        display: none;
+    }
+}
