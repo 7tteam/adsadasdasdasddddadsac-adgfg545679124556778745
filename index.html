@@ -198,6 +198,16 @@
         padding-right: 20px !important;
       }
     }
+    
+    /* Center contact info on mobile in RTL */
+    @media (max-width: 768px) {
+      [dir="rtl"] .contact_block .text {
+        text-align: center !important;
+      }
+      [dir="rtl"] .contact_block .text p[dir="ltr"] {
+        text-align: center !important;
+      }
+    }
   </style>
   <!-- Vertical Blure Line Animation CSS -->
   <link rel="stylesheet" href="css/vertical-blureline-animation-style.css">
@@ -447,6 +457,25 @@
       direction: ltr !important;
       unicode-bidi: embed !important;
       text-align: left !important;
+    }
+    
+    /* Phone input placeholder alignment in RTL */
+    [dir="rtl"] input[type="tel"]::placeholder {
+      text-align: right !important;
+      direction: rtl !important;
+    }
+    
+    /* Footer logo responsive size - bigger and centered */
+    @media (max-width: 768px) {
+      footer .logo {
+        text-align: center !important;
+      }
+      footer .logo img {
+        width: 320px !important;
+        max-width: 320px !important;
+        margin: 0 auto !important;
+        display: block !important;
+      }
     }
     
 
