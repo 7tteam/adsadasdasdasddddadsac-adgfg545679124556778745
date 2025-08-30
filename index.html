@@ -119,14 +119,15 @@
     }
     
     input[type="tel"] {
-      direction: ltr;
-      text-align: right;
+      direction: ltr !important;
+      text-align: left !important;
     }
     
     [dir="rtl"] input[type="tel"] {
-      direction: ltr;
-      text-align: right;
-      padding-right: 15px;
+      direction: ltr !important;
+      text-align: left !important;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
     }
     
     .whatsapp-float:hover {
@@ -434,6 +435,18 @@
       text-align: left !important;
       direction: ltr !important;
       padding-left: 15px !important;
+    }
+    
+    /* Phone number display fix */
+    p[dir="ltr"], a[href^="tel:"] {
+      direction: ltr !important;
+      unicode-bidi: embed !important;
+    }
+    
+    [dir="rtl"] p[dir="ltr"], [dir="rtl"] a[href^="tel:"] {
+      direction: ltr !important;
+      unicode-bidi: embed !important;
+      text-align: left !important;
     }
     
 
